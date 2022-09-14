@@ -25,3 +25,20 @@ Additional considerations:
     -   What needs to live in a persistence layer?
 -   Is there some state we need to initialize?
 -   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+
+TASKS TO ACCOMPLISH
+
+    City name input bar
+        >Function to display name on map(?)
+    Climate dropdown menu
+        >Link color themes
+        >Link Images to climates
+        >display climate associated images/themes
+    Architecture dropdown menu
+        >link fonts and themes?
+        >link images to arch.
+        >display arch. associated images & such
+    City Attractions
+        >Input bar and add button
+        >add inputs to array
+        display array
