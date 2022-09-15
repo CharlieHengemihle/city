@@ -15,6 +15,9 @@
 
         <!-- fonts -->
         <!-- see https://fonts.google.com/ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baumans&family=Combo&family=Dancing+Script&family=Nabla&display=swap" rel="stylesheet">
 
         <!-- css -->
         <link rel="stylesheet" href="styles/reset.css" />
@@ -37,7 +40,7 @@
                         <option value="desert">Desert</option>
                         <option value="tundra">Tundra</option>
                         <option value="beach">Tropical Beach</option>
-                        <option value="Forest">Forest</option>
+                        <option value="forest">Forest</option>
                     </select>
                 </div>
                 <div>
@@ -47,16 +50,17 @@
                         <option value="future">Futuristic</option>
                         <option value="goth">Gothic</option>
                         <option value="village">Rustic</option>
-                        <option value="dome city">Dome City</option>
+                        <option value="dome-city">Dome City</option>
                     </select>
                 </div>
                 <div>
                     <h2>Attractions</h2>
-                    <input id="attractions" />
-                    <button id="att-button">+</button>
-                </div>
+                    <div id="att-and-button">
+                        <input id="attractions" />
+                        <button id="att-button">+</button>
+                    </div>
             </section>
-            <section id="city">
+            <section class="city" id="city">
                 <h1 id="name-zone"></h1>
                 <div id="pic-zone">
                     <img id="climate-display" src="assets/city/tundra.jpg" />

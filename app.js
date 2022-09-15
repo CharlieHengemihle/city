@@ -13,12 +13,13 @@ let climateImage = document.getElementById('climate-display');
 let archImage = document.getElementById('architecture-display');
 let attractionsList = document.getElementById('attractions-display');
 let addButton = document.getElementById('att-button');
+let cityArticle = document.getElementById('city');
 
 /* State */
 const city = {
     name: 'townsylvania',
-    climate: 'balmy',
-    architecture: 'arch heavy',
+    climate: '',
+    architecture: '',
     attractions: [],
 };
 /* Events */
@@ -56,7 +57,9 @@ addButton.addEventListener('click', () => {
 
 function displayCity() {
     nameDisplay.textContent = city.name;
-
+    cityArticle.classList.value = '';
+    cityArticle.classList.add(city.climate);
+    cityArticle.classList.add(city.architecture);
     climateImage.src = 'assets/city/' + city.climate + '.jpg';
     archImage.src = 'assets/city/' + city.architecture + '.jpg';
 }
