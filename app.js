@@ -1,6 +1,7 @@
 /* Imports */
 
 /* Get DOM Elements */
+let cityName = document.getElementById('city-name');
 
 /* State */
 

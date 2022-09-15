@@ -29,13 +29,41 @@
         </header>
 
         <main>
-            <div>
-                <h2>City Name</h2>
-                <input?
-            </div>
-            <div id="climate">
-                <select name="" id=""></select>
-            </div>
+            <section>
+                <div>
+                    <h2>City Name</h2>
+                    <input id="city-name" />
+                </div>
+                <div id="climate">
+                    <h2>Climate</h2>
+                    <select name="climate" id="climate-selector">
+                        <option value="desert">Desert</option>
+                        <option value="tundra">Tundra</option>
+                        <option value="beach">Tropical Beach</option>
+                        <option value="Forest">Forest</option>
+                    </select>
+                </div>
+                <div>
+                    <h2>Architecture</h2>
+                    <select name="Architecture" id="architecture-selector">
+                        <option value="future">Futuristic</option>
+                        <option value="goth">Gothic</option>
+                        <option value="rustic">Rustic</option>
+                        <option value="bubble">Dome City</option>
+                    </select>
+                </div>
+                <div>
+                    <h2>Attractions</h2>
+                    <input id="attractions" />
+                    <button id="att-button">+</button>
+                </div>
+            </section>
+            <section>
+                <h1 id="city-name"></h1>
+                <div id="climate-display"></div>
+                <div id="architecture-display"></div>
+                <div id="attractions-display"></div>
+            </section>
         </main>
     </body>
 </html>

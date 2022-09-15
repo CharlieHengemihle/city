@@ -41,4 +41,4 @@ TASKS TO ACCOMPLISH
     City Attractions
         >Input bar and add button
         >add inputs to array
-        display array
+        >display array
