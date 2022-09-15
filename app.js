@@ -12,7 +12,6 @@ let climateImage = document.getElementById('');
 let archImage = document.getElementById('');
 let attractionsImage = document.getElementById('');
 
-
 /* State */
 const city = {
     name: 'townsylvania',
@@ -21,13 +20,17 @@ const city = {
     attractions: [],
 };
 /* Events */
-climateSelect.addEventListener('change'. () => {
+climateSelect.addEventListener('change', () => {
     city.climate = climateSelect.value;
     displayCity();
-}):
+});
+
+architectureSelect.addEventListener('change', () => {
+    city.architecture = architectureSelect.value;
+    displayCity();
+});
 /* Display Functions */
 function displayCity() {
-
-
+    climateImage.src = 'assets/city' + city.climate + '.jpg';
 }
 // (don't forget to call any display functions you want to run on page load!)
