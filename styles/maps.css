@@ -1,6 +1,8 @@
-#display {
+#city {
     display: grid;
+    grid-template-rows: 100px, 400px, 50px, 50px;
     border: 2px solid black;
+    height: 600px;
 }
 
 main {
@@ -8,7 +10,24 @@ main {
     grid-template-columns: 250px 1fr;
 }
 
+#attractions-display {
+    display: inline-flex;
+    text-align: center;
+}
+
+li {
+    padding: 5px;
+}
 #menu {
     display: grid;
     grid-template-rows: repeat(4, 150px);
+}
+h1 {
+    text-align: center;
+}
+img {
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
