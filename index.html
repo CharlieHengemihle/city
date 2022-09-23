@@ -1,39 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baumans&family=Combo&family=Dancing+Script&family=Nabla&display=swap" rel="stylesheet">
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/maps.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
-
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+    <body>
+        <main>
+            <section id="menu">
+                <div>
+                    <h2>City Name</h2>
+                    <input id="city-name" />
+                </div>
+                <div id="climate">
+                    <h2>Climate</h2>
+                    <select name="climate" id="climate-selector">
+                        <option value="holder"></option>
+                        <option value="desert">Desert</option>
+                        <option value="tundra">Tundra</option>
+                        <option value="beach">Tropical Beach</option>
+                        <option value="forest">Forest</option>
+                    </select>
+                </div>
+                <div>
+                    <h2>Architecture</h2>
+                    <select name="Architecture" id="architecture-selector">
+                        <option value="holder"></option>
+                        <option value="future">Futuristic</option>
+                        <option value="goth">Gothic</option>
+                        <option value="village">Rustic</option>
+                        <option value="dome-city">Dome City</option>
+                    </select>
+                </div>
+                <div>
+                    <h2>Attractions</h2>
+                    <div id="att-and-button">
+                        <input id="attractions" />
+                        <button id="att-button">+</button>
+                    </div>
+            </section>
+            <section class="city" id="city">
+                <h1 id="name-zone"></h1>
+                <div id="pic-zone">
+                    <img id="climate-display" src="assets/city/tundra.jpg" />
+                    <img id="architecture-display" src="assets/city/goth.jpg" />
+                </div>
+                <h3>Features and Attractions</h3>
+                <ul id="attractions-display"></ul>
+            </section>
+        </main>
+    </body>
 </html>
