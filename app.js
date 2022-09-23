@@ -18,23 +18,27 @@ let cityArticle = document.getElementById('city');
 /* State */
 const city = {
     name: 'townsylvania',
-    climate: '',
-    architecture: '',
+    climate: 'tundra',
+    architecture: 'goth',
     attractions: [],
 };
 /* Events */
 cityName.addEventListener('input', () => {
     city.name = cityName.value;
+    // displayClimate();
+    // displayArchitecture();
     displayCity();
 });
 
 climateSelect.addEventListener('change', () => {
     city.climate = climateSelect.value;
+    // displayClimate();
     displayCity();
 });
 
 archSelect.addEventListener('change', () => {
     city.architecture = archSelect.value;
+    // displayArchitecture();
     displayCity();
 });
 /* Display Functions */
@@ -63,4 +67,20 @@ function displayCity() {
     climateImage.src = 'assets/city/' + city.climate + '.jpg';
     archImage.src = 'assets/city/' + city.architecture + '.jpg';
 }
+// function displayClimate() {
+//     nameDisplay.textContent = city.name;
+//     cityArticle.classList.value = '';
+//     cityArticle.classList.add(city.climate);
+//     // cityArticle.classList.add(city.architecture);
+//     climateImage.src = 'assets/city/' + city.climate + '.jpg';
+//     // archImage.src = 'assets/city/' + city.architecture + '.jpg';
+// }
+// function displayArchitecture() {
+//     nameDisplay.textContent = city.name;
+//     cityArticle.classList.value = '';
+//     // cityArticle.classList.add(city.climate);
+//     cityArticle.classList.add(city.architecture);
+//     // climateImage.src = 'assets/city/' + city.climate + '.jpg';
+//     archImage.src = 'assets/city/' + city.architecture + '.jpg';
+// }
 // (don't forget to call any display functions you want to run on page load!)
